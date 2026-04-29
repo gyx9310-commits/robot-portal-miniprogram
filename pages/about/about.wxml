@@ -1,8 +1,5 @@
 <view class="container">
   <view class="page-header">
-    <view class="logo-wrap">
-      <text class="logo">🤖</text>
-    </view>
     <text class="page-title">关于我们</text>
     <text class="page-subtitle">致力于为幼儿园提供最优质的智能教育解决方案</text>
   </view>

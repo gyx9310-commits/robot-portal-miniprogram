@@ -1,7 +1,6 @@
 <view class="container">
   <view class="product-header">
     <view class="product-hero">
-      <view class="robot-display">🤖</view>
       <text class="product-title">半身仿生智能机器人</text>
       <text class="product-subtitle">专为高端幼儿园设计的智能教育伙伴</text>
     </view>
