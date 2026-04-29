@@ -1,0 +1,57 @@
+<view class="container">
+  <view class="page-header">
+    <text class="page-title">落地案例</text>
+    <text class="page-subtitle">真实案例，见证智能幼教的力量</text>
+  </view>
+
+  <view class="stats-section">
+    <view class="stat-item">
+      <text class="stat-value">50+</text>
+      <text class="stat-label">合作园所</text>
+    </view>
+    <view class="stat-item">
+      <text class="stat-value">10万+</text>
+      <text class="stat-label">服务儿童</text>
+    </view>
+    <view class="stat-item">
+      <text class="stat-value">98%</text>
+      <text class="stat-label">满意度</text>
+    </view>
+  </view>
+
+  <view class="cases-list">
+    <view class="case-card" wx:for="{{cases}}" wx:key="id" bindtap="viewCase">
+      <view class="case-image">{{item.icon}}</view>
+      <view class="case-content">
+        <view class="case-header">
+          <text class="case-name">{{item.name}}</text>
+          <text class="case-badge">{{item.status}}</text>
+        </view>
+        <text class="case-location">{{item.location}}</text>
+        <text class="case-desc">{{item.desc}}</text>
+        <view class="case-tags">
+          <text class="tag" wx:for="{{item.tags}}" wx:key="*this">{{item}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="testimonials-section">
+    <text class="section-title">园方评价</text>
+    <view class="testimonials-list">
+      <view class="testimonial-item" wx:for="{{testimonials}}" wx:key="id">
+        <view class="testimonial-avatar">{{item.avatar}}</view>
+        <view class="testimonial-content">
+          <text class="testimonial-text">「{{item.content}}」</text>
+          <text class="testimonial-author">{{item.author}} · {{item.title}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="cta-section">
+    <text class="cta-title">加入我们的合作伙伴</text>
+    <text class="cta-desc">让更多孩子享受智能教育的乐趣</text>
+    <button class="btn-primary" bindtap="goToContact">申请合作</button>
+  </view>
+</view>

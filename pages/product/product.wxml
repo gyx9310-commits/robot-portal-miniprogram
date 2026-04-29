@@ -1,0 +1,53 @@
+<view class="container">
+  <view class="product-header">
+    <view class="product-hero">
+      <view class="robot-display">🤖</view>
+      <text class="product-title">半身仿生智能机器人</text>
+      <text class="product-subtitle">专为高端幼儿园设计的智能教育伙伴</text>
+    </view>
+  </view>
+
+  <view class="specs-section">
+    <text class="section-title">产品规格</text>
+    <view class="specs-grid">
+      <view class="spec-item" wx:for="{{specs}}" wx:key="id">
+        <text class="spec-value">{{item.value}}</text>
+        <text class="spec-label">{{item.label}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="features-section">
+    <text class="section-title">核心功能</text>
+    <view class="features-list">
+      <view class="feature-item" wx:for="{{features}}" wx:key="id">
+        <view class="feature-icon-wrap">
+          <text class="feature-icon">{{item.icon}}</text>
+        </view>
+        <view class="feature-content">
+          <text class="feature-title">{{item.title}}</text>
+          <text class="feature-desc">{{item.desc}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="advantages-section">
+    <text class="section-title">技术优势</text>
+    <view class="advantages-list">
+      <view class="advantage-item" wx:for="{{advantages}}" wx:key="id">
+        <view class="advantage-number">{{item.number}}</view>
+        <view class="advantage-content">
+          <text class="advantage-title">{{item.title}}</text>
+          <text class="advantage-desc">{{item.desc}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="cta-section">
+    <text class="cta-title">感兴趣？</text>
+    <text class="cta-desc">立即预约产品演示，体验智能幼教的魅力</text>
+    <button class="btn-primary" bindtap="goToContact">预约演示</button>
+  </view>
+</view>

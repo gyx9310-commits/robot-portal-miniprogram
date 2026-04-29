@@ -1,0 +1,81 @@
+<view class="container">
+  <view class="page-header">
+    <view class="logo-wrap">
+      <text class="logo">🤖</text>
+    </view>
+    <text class="page-title">关于我们</text>
+    <text class="page-subtitle">致力于为幼儿园提供最优质的智能教育解决方案</text>
+  </view>
+
+  <view class="about-section">
+    <text class="section-title">公司简介</text>
+    <view class="about-content">
+      <text class="about-text">
+        我们是一家专注于幼教领域的科技创新企业，致力于通过人工智能技术为幼儿园提供智能化、个性化的教育解决方案。
+      </text>
+      <text class="about-text">
+        公司核心团队来自知名高校和科技企业，拥有丰富的AI研发经验和幼教行业资源。我们坚信，科技可以让教育更美好，让每个孩子都能享受到优质的教育资源。
+      </text>
+    </view>
+  </view>
+
+  <view class="mission-section">
+    <text class="section-title">使命与愿景</text>
+    <view class="mission-cards">
+      <view class="mission-card">
+        <text class="mission-icon">🎯</text>
+        <text class="mission-title">使命</text>
+        <text class="mission-desc">用科技赋能幼教，让每个孩子都能快乐成长</text>
+      </view>
+      <view class="mission-card">
+        <text class="mission-icon">🌟</text>
+        <text class="mission-title">愿景</text>
+        <text class="mission-desc">成为全球领先的幼教智能解决方案提供商</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="team-section">
+    <text class="section-title">核心团队</text>
+    <view class="team-list">
+      <view class="team-member" wx:for="{{team}}" wx:key="id">
+        <view class="member-avatar">{{item.avatar}}</view>
+        <text class="member-name">{{item.name}}</text>
+        <text class="member-title">{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="contact-section">
+    <text class="section-title">联系我们</text>
+    <view class="contact-info">
+      <view class="contact-item">
+        <text class="contact-icon">📍</text>
+        <view class="contact-content">
+          <text class="contact-label">公司地址</text>
+          <text class="contact-value">北京市海淀区中关村科技园</text>
+        </view>
+      </view>
+      <view class="contact-item">
+        <text class="contact-icon">📞</text>
+        <view class="contact-content">
+          <text class="contact-label">服务热线</text>
+          <text class="contact-value">400-888-8888</text>
+        </view>
+      </view>
+      <view class="contact-item">
+        <text class="contact-icon">✉️</text>
+        <view class="contact-content">
+          <text class="contact-label">商务邮箱</text>
+          <text class="contact-value">business@robot-edu.com</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="cta-section">
+    <text class="cta-title">期待与您合作</text>
+    <text class="cta-desc">共同推动幼教智能化发展</text>
+    <button class="btn-primary" bindtap="goToContact">立即联系</button>
+  </view>
+</view>

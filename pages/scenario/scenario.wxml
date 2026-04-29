@@ -1,0 +1,36 @@
+<view class="container">
+  <view class="page-header">
+    <text class="page-title">应用场景</text>
+    <text class="page-subtitle">探索智能机器人在幼儿园的多元应用</text>
+  </view>
+
+  <view class="scenarios-list">
+    <view class="scenario-card" wx:for="{{scenarios}}" wx:key="id">
+      <view class="scenario-image">{{item.icon}}</view>
+      <view class="scenario-content">
+        <text class="scenario-title">{{item.title}}</text>
+        <text class="scenario-desc">{{item.desc}}</text>
+        <view class="scenario-features">
+          <text class="feature-tag" wx:for="{{item.features}}" wx:key="*this">{{item}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="benefits-section">
+    <text class="section-title">园所价值</text>
+    <view class="benefits-grid">
+      <view class="benefit-item" wx:for="{{benefits}}" wx:key="id">
+        <view class="benefit-icon">{{item.icon}}</view>
+        <text class="benefit-title">{{item.title}}</text>
+        <text class="benefit-desc">{{item.desc}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="cta-section">
+    <text class="cta-title">开启智能幼教之旅</text>
+    <text class="cta-desc">让科技为幼儿园赋能</text>
+    <button class="btn-primary" bindtap="goToContact">立即咨询</button>
+  </view>
+</view>

@@ -1,0 +1,81 @@
+<view class="container">
+  <view class="page-header">
+    <text class="page-title">商务对接</text>
+    <text class="page-subtitle">留下您的信息，我们将尽快与您联系</text>
+  </view>
+
+  <view class="contact-form">
+    <view class="form-item">
+      <text class="form-label">* 您的姓名</text>
+      <input class="form-input" placeholder="请输入姓名" bindinput="onNameInput" />
+    </view>
+    
+    <view class="form-item">
+      <text class="form-label">* 联系电话</text>
+      <input class="form-input" type="number" placeholder="请输入手机号码" bindinput="onPhoneInput" />
+    </view>
+    
+    <view class="form-item">
+      <text class="form-label">* 园所名称</text>
+      <input class="form-input" placeholder="请输入幼儿园名称" bindinput="onSchoolInput" />
+    </view>
+    
+    <view class="form-item">
+      <text class="form-label">所在城市</text>
+      <input class="form-input" placeholder="请输入所在城市" bindinput="onCityInput" />
+    </view>
+    
+    <view class="form-item">
+      <text class="form-label">需求类型</text>
+      <view class="radio-group">
+        <view class="radio-item" wx:for="{{requirements}}" wx:key="id" bindtap="selectRequirement" data-id="{{item.id}}">
+          <view class="radio-circle {{selectedRequirement === item.id ? 'checked' : ''}}">
+            <view class="radio-inner" wx:if="{{selectedRequirement === item.id}}"></view>
+          </view>
+          <text class="radio-label">{{item.name}}</text>
+        </view>
+      </view>
+    </view>
+    
+    <view class="form-item">
+      <text class="form-label">留言内容</text>
+      <textarea class="form-textarea" placeholder="请描述您的需求..." bindinput="onMessageInput"></textarea>
+    </view>
+
+    <button class="btn-submit" bindtap="submitForm">提交咨询</button>
+  </view>
+
+  <view class="contact-info-section">
+    <text class="section-title">联系方式</text>
+    <view class="contact-card">
+      <view class="contact-item">
+        <text class="contact-icon">📞</text>
+        <view class="contact-detail">
+          <text class="contact-title">服务热线</text>
+          <text class="contact-value">400-888-8888</text>
+        </view>
+      </view>
+      <view class="contact-item">
+        <text class="contact-icon">✉️</text>
+        <view class="contact-detail">
+          <text class="contact-title">商务邮箱</text>
+          <text class="contact-value">business@robot-edu.com</text>
+        </view>
+      </view>
+      <view class="contact-item">
+        <text class="contact-icon">🕐</text>
+        <view class="contact-detail">
+          <text class="contact-title">服务时间</text>
+          <text class="contact-value">周一至周五 9:00-18:00</text>
+        </view>
+      </view>
+      <view class="contact-item">
+        <text class="contact-icon">📍</text>
+        <view class="contact-detail">
+          <text class="contact-title">公司地址</text>
+          <text class="contact-value">北京市海淀区中关村科技园</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
