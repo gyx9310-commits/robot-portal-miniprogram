@@ -21,5 +21,11 @@ Page({
     wx.navigateTo({
       url: '/pages/contact/contact'
     })
+  },
+
+  goToAbout: function () {
+    wx.navigateTo({
+      url: '/pages/about/about'
+    })
   }
 })

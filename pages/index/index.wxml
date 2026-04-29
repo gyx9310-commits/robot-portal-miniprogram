@@ -21,18 +21,16 @@
         <view class="entry-icon">💬</view>
         <text class="entry-text">合作咨询</text>
       </view>
+      <view class="entry-item" bindtap="goToAbout">
+        <view class="entry-icon">🏢</view>
+        <text class="entry-text">关于我们</text>
+      </view>
     </view>
   </view>
 
   <view class="footer-section">
     <view class="footer-content">
-      <view class="logo-area">
-        <text class="logo">🤖</text>
-      </view>
-      <view class="info-area">
-        <text class="hint-text">无需注册、无需登录，直接浏览</text>
-        <text class="footer-slogan">专注半身仿生智能，打造高端幼教科技解决方案</text>
-      </view>
+      <text class="footer-slogan">专注半身仿生智能，打造高端幼教科技解决方案</text>
     </view>
   </view>
 </view>

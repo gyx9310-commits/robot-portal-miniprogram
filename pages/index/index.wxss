@@ -85,6 +85,7 @@
   height: 33.33vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 32rpx;
   box-sizing: border-box;
   background: #fff;
@@ -93,20 +94,9 @@
 
 .footer-content {
   display: flex;
-  gap: 24rpx;
+  flex-direction: column;
   align-items: center;
-}
-
-.logo-area {
-  flex-shrink: 0;
-}
-
-.logo {
-  font-size: 80rpx;
-}
-
-.info-area {
-  flex: 1;
+  gap: 16rpx;
 }
 
 .hint-text {
