@@ -1,36 +1,75 @@
 <view class="container">
   <view class="banner-section">
-    <image class="banner-image" src="https://neeko-copilot.bytedance.net/api/text_to_image?prompt=Half-body%20bionic%20robot%20in%20high-end%20kindergarten%20lobby%20with%20modern%20interior%20design%20warm%20lighting%20professional%20photography&image_size=portrait_16_9" mode="aspectFill"></image>
-    <view class="banner-overlay">
-      <text class="banner-slogan">仿生智能 · 赋能高端幼教</text>
-      <text class="banner-subtitle">半身仿生机器人 试点落地中</text>
+    <view class="banner-bg"></view>
+    <view class="banner-glow"></view>
+    <view class="floating-particles">
+      <view class="particle" wx:for="{{particles}}" wx:key="id" style="left:{{item.left}}%; top:{{item.top}}%; animation-delay:{{item.delay}}s;"></view>
+    </view>
+    <view class="model-container" bindtouchstart="onTouchStart" bindtouchmove="onTouchMove" bindtouchend="onTouchEnd">
+      <view class="model-scene">
+        <view class="model-card" style="transform: rotateY({{rotateY}}deg) rotateX({{rotateX}}deg);">
+          <image class="model-image" src="/images/robot_banner.jpg" mode="aspectFit"></image>
+          <view class="model-reflection"></view>
+        </view>
+        <view class="model-shadow"></view>
+      </view>
+      <view class="hint-text">← 左右滑动旋转 →</view>
+    </view>
+    <view class="banner-overlay"></view>
+    <view class="banner-content">
+      <view class="scan-line"></view>
     </view>
   </view>
 
   <view class="entry-section">
+    <view class="entry-header">
+      <text class="banner-slogan">BIONIC INTELLIGENCE</text>
+      <text class="banner-title">仿生智能 · 赋能高端幼教</text>
+      <text class="banner-subtitle">Half-Body Bionic Robot · Pilot Program</text>
+    </view>
     <view class="entry-grid">
       <view class="entry-item" bindtap="goToProduct">
-        <view class="entry-icon">🤖</view>
+        <view class="entry-icon-wrapper">
+          <view class="entry-icon-inner">🤖</view>
+          <view class="entry-glow"></view>
+        </view>
         <text class="entry-text">产品介绍</text>
+        <view class="entry-border"></view>
       </view>
       <view class="entry-item" bindtap="goToCases">
-        <view class="entry-icon">🏫</view>
+        <view class="entry-icon-wrapper">
+          <view class="entry-icon-inner">🏫</view>
+          <view class="entry-glow"></view>
+        </view>
         <text class="entry-text">试点案例</text>
+        <view class="entry-border"></view>
       </view>
       <view class="entry-item" bindtap="goToContact">
-        <view class="entry-icon">💬</view>
+        <view class="entry-icon-wrapper">
+          <view class="entry-icon-inner">💬</view>
+          <view class="entry-glow"></view>
+        </view>
         <text class="entry-text">合作咨询</text>
+        <view class="entry-border"></view>
       </view>
       <view class="entry-item" bindtap="goToAbout">
-        <view class="entry-icon">🏢</view>
+        <view class="entry-icon-wrapper">
+          <view class="entry-icon-inner">🏢</view>
+          <view class="entry-glow"></view>
+        </view>
         <text class="entry-text">关于我们</text>
+        <view class="entry-border"></view>
       </view>
     </view>
   </view>
 
   <view class="footer-section">
     <view class="footer-content">
+      <view class="footer-border"></view>
       <text class="footer-slogan">专注半身仿生智能，打造高端幼教科技解决方案</text>
+      <view class="footer-badge">
+        <text class="badge-text">PILOT VERSION</text>
+      </view>
     </view>
   </view>
 </view>

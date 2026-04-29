@@ -30,7 +30,7 @@
     }
   },
   "compileType": "miniprogram",
-  "libVersion": "2.19.4",
+  "libVersion": "3.15.2",
   "appid": "wx1487fcf64107af46",
   "projectname": "robot-portal",
   "isGameTourist": false,
