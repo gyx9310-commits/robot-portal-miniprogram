@@ -1,10 +1,10 @@
 Page({
   data: {
     specs: [
-      { id: 1, value: '45cm', label: '身高' },
-      { id: 2, value: '8kg', label: '重量' },
-      { id: 3, value: '8h', label: '续航' },
-      { id: 4, value: 'AI', label: '智能等级' }
+      { id: 1, value: '19', label: '自由度' },
+      { id: 2, value: '12', label: '关节数量' },
+      { id: 3, value: '80+', label: '细腻表情' },
+      { id: 4, value: '10000h+', label: '可靠运行' }
     ],
     features: [
       { id: 1, icon: '💬', title: '智能对话', desc: '支持自然语言交互，能理解儿童语言并进行趣味对话' },
